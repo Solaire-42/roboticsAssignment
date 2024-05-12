@@ -1,0 +1,16 @@
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/lib/turtlesim_automata/turtlesim_automata_node
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/ament_index/resource_index/package_run_dependencies/turtlesim_automata
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/ament_index/resource_index/parent_prefix_path/turtlesim_automata
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/ament_prefix_path.sh
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/ament_prefix_path.dsv
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/path.sh
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/path.dsv
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.bash
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.sh
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.zsh
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.dsv
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/package.dsv
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/ament_index/resource_index/packages/turtlesim_automata
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/cmake/turtlesim_automataConfig.cmake
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/cmake/turtlesim_automataConfig-version.cmake
+/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/package.xml

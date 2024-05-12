@@ -1,0 +1,51 @@
+[0.008s] Invoking command in '/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata -DCMAKE_INSTALL_PREFIX=/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.116s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.200s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.288s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.288s] -- Detecting CXX compile features
+[0.288s] -- Detecting CXX compile features - done
+[0.290s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.429s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.507s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.577s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.577s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata/include>
+[0.577s] -- Configured cppcheck exclude dirs and/or files: 
+[0.578s] -- Added test 'lint_cmake' to check CMake code style
+[0.579s] -- Added test 'uncrustify' to check C / C++ code style
+[0.579s] -- Configured uncrustify additional arguments: 
+[0.579s] -- Added test 'xmllint' to check XML markup files
+[0.581s] -- Configuring done
+[0.585s] -- Generating done
+[0.586s] -- Build files have been written to: /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata
+[0.593s] Invoked command in '/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata -DCMAKE_INSTALL_PREFIX=/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata
+[0.593s] Invoking command in '/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata -- -j4 -l4
+[0.643s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_automata_node.dir/src/turtlesim_automata_node.cpp.o[0m
+[0.682s] [100%] [32m[1mLinking CXX executable turtlesim_automata_node[0m
+[0.726s] [100%] Built target turtlesim_automata_node
+[0.738s] Invoked command in '/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata -- -j4 -l4
+[0.779s] Invoking command in '/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata
+[0.787s] -- Install configuration: ""
+[0.787s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/lib/turtlesim_automata/turtlesim_automata_node
+[0.788s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/ament_index/resource_index/package_run_dependencies/turtlesim_automata
+[0.788s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/ament_index/resource_index/parent_prefix_path/turtlesim_automata
+[0.788s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/ament_prefix_path.sh
+[0.788s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/ament_prefix_path.dsv
+[0.788s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/path.sh
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/environment/path.dsv
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.bash
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.sh
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.zsh
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/local_setup.dsv
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/package.dsv
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/ament_index/resource_index/packages/turtlesim_automata
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/cmake/turtlesim_automataConfig.cmake
+[0.789s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/cmake/turtlesim_automataConfig-version.cmake
+[0.790s] -- Installing: /home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata/share/turtlesim_automata/package.xml
+[0.792s] Invoked command in '/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata
