@@ -1,0 +1,80 @@
+\documentclass[a4paper, oneside, 11pt]{article}
+%% -> Für längere Arbeiten "report" benutzen.
+
+%% --------------------------------------------------------------------- %%
+
+\usepackage{ifthen}
+\newboolean{english}
+% \setboolean{english}{true} %% -> Kommentar entfernen bei englischen Arbeiten
+
+%% --------------------------------------------------------------------- %%
+
+%% -> Einfügen der Definitionen
+\input{Definition/Definition}
+
+%% -> Deckblatt ausfüllen 
+\def\labtitle{Strategisches Marketing}
+\def\labcode{MECH-M-2-MSK-STM-SE}
+\def\labname{Markenanalyse zu Garmin Sportuhren}
+\def\labnum{Berichtnummer}
+\def\study{Master Mechatronik and Smart Technologies}
+\def\branch{}
+\def\term{2.}
+\def\lecturer{Maria Wallhöfer}
+\def\group{MA-MECH-23-BB}
+\def\student{Abfalterer, Figl, Posch}
+
+%% --------------------------------------------------------------------- %%
+
+%% -> Beginn des Dokumentes
+
+\begin{document}
+\newcounter{romanPagenumber}
+
+%% -> Sprache auswählen
+\ifthenelse{\boolean{english}}{\selectlanguage{english}}{\selectlanguage{ngerman}}
+\selectlanguage{ngerman}
+%\selectlanguage{english}
+
+%% -> Fußzeile und Kopfzeile einfügen
+\pagestyle{fancy}
+
+\pagenumbering{Roman}
+%% -> Deckblatt laden
+\input{Deckblatt/Deckblatt}
+
+\setcounter{romanPagenumber}{\value{page}}
+
+%% -> Inhaltsverzeichnis
+\tableofcontents%\thispagestyle{empty}
+\clearpage
+
+\pagestyle{fancy}
+\pagenumbering{arabic}
+% =============================================================================
+\input{01_produkt}
+\newpage
+\input{02_befragung}
+\newpage
+\input{03_markenanalyse}
+\newpage
+\input{04_schlussfolgerung}
+% =============================================================================
+
+\clearpage
+
+%% -> Verzeichnisse
+\pagestyle{fancy}
+\pagenumbering{Roman}
+\addtocounter{romanPagenumber}{1}
+\setcounter{page}{\theromanPagenumber}
+
+\input{Verzeichnisse/Verzeichnisse}
+%% --------------------------------------------------------------------- %%
+\clearpage
+% -> Anhang
+\begin{appendix}
+\input{99_anhang}
+\end{appendix}
+
+\end{document}
