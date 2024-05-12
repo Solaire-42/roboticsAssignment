@@ -1,8 +1,8 @@
-# Install script for directory: /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata
+# Install script for directory: /home/luke/workspace/roboticsAssignment/ws_ros2/src/turtlesim_automata
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luke/workspace/roboticsAssignment/turtlesim_automata/install/turtlesim_automata")
+  set(CMAKE_INSTALL_PREFIX "/home/luke/workspace/roboticsAssignment/ws_ros2/install/turtlesim_automata")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,78 +43,82 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/turtlesim_automata_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/turtlesim_automata_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/turtlesim_automata_node"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata" TYPE EXECUTABLE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/turtlesim_automata_node")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/turtlesim_automata_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/turtlesim_automata_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata" TYPE EXECUTABLE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/automata")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata"
+         OLD_RPATH "/home/luke/ros2_humble/install/rclcpp/lib:/home/luke/ros2_humble/install/geometry_msgs/lib:/home/luke/ros2_humble/install/turtlesim/lib:/home/luke/ros2_humble/install/libstatistics_collector/lib:/home/luke/ros2_humble/install/rcl/lib:/home/luke/ros2_humble/install/rmw_implementation/lib:/home/luke/ros2_humble/install/ament_index_cpp/lib:/home/luke/ros2_humble/install/rcl_logging_spdlog/lib:/home/luke/ros2_humble/install/rcl_logging_interface/lib:/home/luke/ros2_humble/install/rcl_interfaces/lib:/home/luke/ros2_humble/install/rcl_yaml_param_parser/lib:/home/luke/ros2_humble/install/libyaml_vendor/lib:/home/luke/ros2_humble/install/rosgraph_msgs/lib:/home/luke/ros2_humble/install/statistics_msgs/lib:/home/luke/ros2_humble/install/tracetools/lib:/home/luke/ros2_humble/install/std_msgs/lib:/home/luke/ros2_humble/install/action_msgs/lib:/home/luke/ros2_humble/install/builtin_interfaces/lib:/home/luke/ros2_humble/install/unique_identifier_msgs/lib:/home/luke/ros2_humble/install/rosidl_typesupport_fastrtps_c/lib:/home/luke/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/lib:/home/luke/ros2_humble/install/fastcdr/lib:/home/luke/ros2_humble/install/rmw/lib:/home/luke/ros2_humble/install/rosidl_typesupport_introspection_cpp/lib:/home/luke/ros2_humble/install/rosidl_typesupport_introspection_c/lib:/home/luke/ros2_humble/install/rosidl_typesupport_cpp/lib:/home/luke/ros2_humble/install/rosidl_typesupport_c/lib:/home/luke/ros2_humble/install/rcpputils/lib:/home/luke/ros2_humble/install/rosidl_runtime_c/lib:/home/luke/ros2_humble/install/rcutils/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/turtlesim_automata_node")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlesim_automata/automata")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlesim_automata")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlesim_automata")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlesim_automata")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlesim_automata")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/home/luke/ros2_humble/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/home/luke/ros2_humble/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/environment" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_index/share/ament_index/resource_index/packages/turtlesim_automata")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_index/share/ament_index/resource_index/packages/turtlesim_automata")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata/cmake" TYPE FILE FILES
-    "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_core/turtlesim_automataConfig.cmake"
-    "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/ament_cmake_core/turtlesim_automataConfig-version.cmake"
+    "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_core/turtlesim_automataConfig.cmake"
+    "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/ament_cmake_core/turtlesim_automataConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_automata" TYPE FILE FILES "/home/luke/workspace/roboticsAssignment/ws_ros2/src/turtlesim_automata/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -125,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata
+CMAKE_SOURCE_DIR = /home/luke/workspace/roboticsAssignment/ws_ros2/src/turtlesim_automata
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata
+CMAKE_BINARY_DIR = /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luke/workspace/roboticsAssignment/ws_ros2/src/turtlesim_automata /home/luke/workspace/roboticsAssignment/ws_ros2/src/turtlesim_automata /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luke/workspace/roboticsAssignment/turtlesim_automata/turtlesim_automata
+CMAKE_SOURCE_DIR = /home/luke/workspace/roboticsAssignment/ws_ros2/src/turtlesim_automata
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata
+CMAKE_BINARY_DIR = /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/CMakeFiles /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/CMakeFiles /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/workspace/roboticsAssignment/turtlesim_automata/build/turtlesim_automata/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luke/workspace/roboticsAssignment/ws_ros2/build/turtlesim_automata/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,41 +198,41 @@ turtlesim_automata_uninstall/fast:
 .PHONY : turtlesim_automata_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named turtlesim_automata_node
+# Target rules for targets named automata
 
 # Build rule for target.
-turtlesim_automata_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtlesim_automata_node
-.PHONY : turtlesim_automata_node
+automata: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 automata
+.PHONY : automata
 
 # fast build rule for target.
-turtlesim_automata_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_automata_node.dir/build.make CMakeFiles/turtlesim_automata_node.dir/build
-.PHONY : turtlesim_automata_node/fast
+automata/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/automata.dir/build.make CMakeFiles/automata.dir/build
+.PHONY : automata/fast
 
-src/turtlesim_automata_node.o: src/turtlesim_automata_node.cpp.o
-.PHONY : src/turtlesim_automata_node.o
+src/turtlesim_automata.o: src/turtlesim_automata.cpp.o
+.PHONY : src/turtlesim_automata.o
 
 # target to build an object file
-src/turtlesim_automata_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_automata_node.dir/build.make CMakeFiles/turtlesim_automata_node.dir/src/turtlesim_automata_node.cpp.o
-.PHONY : src/turtlesim_automata_node.cpp.o
+src/turtlesim_automata.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/automata.dir/build.make CMakeFiles/automata.dir/src/turtlesim_automata.cpp.o
+.PHONY : src/turtlesim_automata.cpp.o
 
-src/turtlesim_automata_node.i: src/turtlesim_automata_node.cpp.i
-.PHONY : src/turtlesim_automata_node.i
+src/turtlesim_automata.i: src/turtlesim_automata.cpp.i
+.PHONY : src/turtlesim_automata.i
 
 # target to preprocess a source file
-src/turtlesim_automata_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_automata_node.dir/build.make CMakeFiles/turtlesim_automata_node.dir/src/turtlesim_automata_node.cpp.i
-.PHONY : src/turtlesim_automata_node.cpp.i
+src/turtlesim_automata.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/automata.dir/build.make CMakeFiles/automata.dir/src/turtlesim_automata.cpp.i
+.PHONY : src/turtlesim_automata.cpp.i
 
-src/turtlesim_automata_node.s: src/turtlesim_automata_node.cpp.s
-.PHONY : src/turtlesim_automata_node.s
+src/turtlesim_automata.s: src/turtlesim_automata.cpp.s
+.PHONY : src/turtlesim_automata.s
 
 # target to generate assembly for a file
-src/turtlesim_automata_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_automata_node.dir/build.make CMakeFiles/turtlesim_automata_node.dir/src/turtlesim_automata_node.cpp.s
-.PHONY : src/turtlesim_automata_node.cpp.s
+src/turtlesim_automata.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/automata.dir/build.make CMakeFiles/automata.dir/src/turtlesim_automata.cpp.s
+.PHONY : src/turtlesim_automata.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... turtlesim_automata_uninstall"
 	@echo "... uninstall"
-	@echo "... turtlesim_automata_node"
-	@echo "... src/turtlesim_automata_node.o"
-	@echo "... src/turtlesim_automata_node.i"
-	@echo "... src/turtlesim_automata_node.s"
+	@echo "... automata"
+	@echo "... src/turtlesim_automata.o"
+	@echo "... src/turtlesim_automata.i"
+	@echo "... src/turtlesim_automata.s"
 .PHONY : help
 
 
