@@ -5,7 +5,7 @@
 
 \usepackage{ifthen}
 \newboolean{english}
-% \setboolean{english}{true} %% -> Kommentar entfernen bei englischen Arbeiten
+\setboolean{english}{true} %% -> Kommentar entfernen bei englischen Arbeiten
 
 %% --------------------------------------------------------------------- %%
 
@@ -13,16 +13,16 @@
 \input{Definition/Definition}
 
 %% -> Deckblatt ausfüllen 
-\def\labtitle{Strategisches Marketing}
-\def\labcode{MECH-M-2-MSK-STM-SE}
-\def\labname{Markenanalyse zu Garmin Sportuhren}
+\def\labtitle{Robotics}
+\def\labcode{MECH-M-2-ROB-ROB-ILV}
+\def\labname{Turtlesim Automata}
 \def\labnum{Berichtnummer}
 \def\study{Master Mechatronik and Smart Technologies}
 \def\branch{}
 \def\term{2.}
-\def\lecturer{Maria Wallhöfer}
+\def\lecturer{Daniel McGuiness}
 \def\group{MA-MECH-23-BB}
-\def\student{Abfalterer, Figl, Posch}
+\def\student{Lukas Figl}
 
 %% --------------------------------------------------------------------- %%
 
@@ -33,8 +33,8 @@
 
 %% -> Sprache auswählen
 \ifthenelse{\boolean{english}}{\selectlanguage{english}}{\selectlanguage{ngerman}}
-\selectlanguage{ngerman}
-%\selectlanguage{english}
+%\selectlanguage{ngerman}
+\selectlanguage{english}
 
 %% -> Fußzeile und Kopfzeile einfügen
 \pagestyle{fancy}
@@ -52,13 +52,9 @@
 \pagestyle{fancy}
 \pagenumbering{arabic}
 % =============================================================================
-\input{01_produkt}
+\input{document/01_discussion}
 \newpage
-\input{02_befragung}
-\newpage
-\input{03_markenanalyse}
-\newpage
-\input{04_schlussfolgerung}
+\input{document/02_screenshots}
 % =============================================================================
 
 \clearpage
@@ -68,13 +64,7 @@
 \pagenumbering{Roman}
 \addtocounter{romanPagenumber}{1}
 \setcounter{page}{\theromanPagenumber}
-
-\input{Verzeichnisse/Verzeichnisse}
 %% --------------------------------------------------------------------- %%
 \clearpage
-% -> Anhang
-\begin{appendix}
-\input{99_anhang}
-\end{appendix}
 
 \end{document}
