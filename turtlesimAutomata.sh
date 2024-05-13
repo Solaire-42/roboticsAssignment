@@ -6,8 +6,8 @@ echo "Copy files and directories ..."
 cp -r ws_ros2/src/turtlesim_automata ~/ros2_ws/src
 
 #echo "Delete current directory"
-#cd..
-#rm -r roboticAssignment
+#cd ..
+#rm -rf roboticsAssignment
 
 echo "Change into workspace directory"
 cd ~/ros2_ws
