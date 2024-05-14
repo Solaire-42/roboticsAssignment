@@ -4,6 +4,7 @@
 
 class TurtleController : public rclcpp::Node {
 public:
+    int counterEdgeDetection_ = 0;
     TurtleController() : Node("turtle_controller") {
         // Create publisher to publish velocity commands
         publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
@@ -16,13 +17,34 @@ public:
                 // Update the current pose of the turtle
                 current_pose_ = *pose;
             });
-
+	
         // Timer to publish velocity commands periodically
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), [this]() {
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(100), [this]() {
             // Publish velocity commands to make the turtle move in a square pattern
             geometry_msgs::msg::Twist msg;
-            msg.linear.x = 1.0; // Move forward with a linear velocity of 1 m/s
-            msg.angular.z = 1.0; // Rotate with an angular velocity of 1 rad/s
+            
+            // Edge detection
+            if ((current_pose_.x < 1 || current_pose_.x > 10 || 
+	    	current_pose_.y < 1 || current_pose_.y > 10) &&
+	    	(counterEdgeDetection_ == 0)) {
+            	// Stop linear
+            	msg.linear.x = 0;
+            	// Rotate clockwise 90 degree per second (3.14/2 [rad/s])
+            	msg.angular.z = 15.7;
+            	counterEdgeDetection_++;
+            } else {
+            	// Move forward 1.0 [m/s]
+            	msg.linear.x = 2;
+            	// Rotate with an angular random velocity between -1 and 1 [rad/s]
+            	if (counterEdgeDetection_ > 0) {
+            		msg.angular.z = 0;
+            		counterEdgeDetection_++;
+            		if (counterEdgeDetection_ > 10) { counterEdgeDetection_ = 0; }
+            	} else {
+            	srand(time(0));
+            	msg.angular.z = (rand() % 4) - 2;
+            	}
+            }
             publisher_->publish(msg);
         });
     }
