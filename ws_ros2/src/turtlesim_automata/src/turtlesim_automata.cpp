@@ -31,7 +31,9 @@ public:
             geometry_msgs::msg::Twist msg;
             
             // Edge detection with counter
-            if ((current_pose_.x < 0.5 || current_pose_.x > 10.5 || current_pose_.y < 0.5 || current_pose_.y > 10.5) && (counterEdgeDetection_ == 0)) {
+            if ((current_pose_.x < 0.5 || current_pose_.x > 10.2 || current_pose_.y < 0.5 || current_pose_.y > 10) && (counterEdgeDetection_ == 0)) {
+                // Message for edge detection
+                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "edge detected!");
             	// Stop linear when we reach the borders
             	msg.linear.x = 0;
             	// Rotate clockwise 90 degree per second (3.14/2 [rad/s])
