@@ -5,9 +5,9 @@ mkdir -p ~/ros2_ws/src
 echo "Copy files and directories ..."
 cp -r ws_ros2/src/turtlesim_automata ~/ros2_ws/src
 
-#echo "Delete current directory"
-#cd ..
-#rm -rf roboticsAssignment
+echo "Delete current directory"
+cd ..
+rm -rf roboticsAssignment
 
 echo "Change into workspace directory"
 cd ~/ros2_ws
