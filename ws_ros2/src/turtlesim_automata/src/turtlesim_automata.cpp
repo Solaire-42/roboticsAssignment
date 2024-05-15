@@ -37,7 +37,7 @@ public:
             	// Stop linear when we reach the borders
             	msg.linear.x = 0;
             	// Rotate clockwise 90 degree per second (3.14/2 [rad/s])
-            	msg.angular.z = (3.14/2)/cycletimeTurtleCommands_*1000; // 90 degree / cycletime
+            	msg.angular.z = -(3.14/2)/cycletimeTurtleCommands_*1000; // 90 degree / cycletime
             	counterEdgeDetection_++;
             } else {
             	// Move forward
