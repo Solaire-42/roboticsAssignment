@@ -1,12 +1,12 @@
 \section{Discussion} \label{sec:discussion}
 The assignment required the development of a ROS 2 program controlling a simulated robot within a turtlesim environment. The first step involved understanding the specifications for C++, Linux Ubuntu and it's bash as well as ROS 2. Therefore the provide documents \textit{SurvivingLinux.pdf} and \textit{ROSGroundwork.pdf} from the lecturer were carried out.
 
-The development process commenced with the creation of a ROS 2 package named turtlesimAutomata. This involved creating the necessary workspace, moving the package to the appropriate folder, and configuring the CMakeLists.txt file. The main focus was on implementing the logic to control the robot within the turtlesim environment as per the outlined requirements.
+The development process commenced with the creation of a ROS 2 package named turtlesimAutomata. This involved creating the necessary workspace, moving the package to the appropriate folder, and configuring the CMakeLists.txt file as well as the package.xml file. The main focus was on implementing the logic to control the robot within the turtlesim environment over the popular node communication.
 
-The implementation of the robot's behavior to randomly move and detect edges worked as expected. Utilizing the ROS 2 framework provided an efficient way to manage the robot's actions and interactions within the simulation environment. Additionally, the bash script for automating the installation and execution of the package functioned correctly, ensuring seamless deployment.
+The implementation of the robot's behavior to randomly move and detect edges worked as expected. Utilizing the ROS 2 turtlesim example provided an efficient way to manage the robot's actions and interactions within the simulation environment. Additionally, the bash script for automating the installation and execution of the package functioned correctly, ensuring seamless deployment.
 
-However, one challenge encountered was ensuring the random movement of the robot while avoiding unnecessary collisions with the environment. Implementing a robust collision avoidance mechanism could enhance the overall performance and realism of the simulation.
+However, one challenge encountered was ensuring the random movement of the robot with a smooth and naturally movement. Implementing a robust edge detection mechanism could enhance the overall performance and realism of the simulation to execute the 90 degree rotation clockwise.
 
 Throughout the development process, extensive testing was conducted to ensure the functionality and reliability of the implemented solution.
 
-Furthermore, integration testing was performed to assess the overall behavior of the robot within the turtlesim environment. This involved running the simulation multiple times under various conditions to evaluate the effectiveness of the edge detection and rotation mechanisms.
+Furthermore, integration testing was performed to assess the overall behavior of the robot within the turtlesim environment. This involved running the simulation multiple times to evaluate the effectiveness of the edge detection and rotation mechanisms.
