@@ -3,7 +3,7 @@
 <package format="3">
   <name>turtlesim_automata</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Turtlesim example with random turtle movements and edge detection</description>
   <maintainer email="f.luky@gmx.at">luke</maintainer>
   <license>Apache-2.0</license>
 
